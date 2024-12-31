@@ -4,6 +4,7 @@ import { CitiesSelectorWrapper } from "@/features/cities-selector/ui/cities-sele
 import { LangSwitcher } from "@/features/lang-switcher/ui/lang-switcher";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { unstable_noStore as noStore } from "next/cache";
+import { connection } from "next/server";
 
 type SearchParams = {
 	cities?: string;
@@ -185,7 +186,7 @@ export default async function Home({ searchParams, params }: Props) {
 	const { lang } = awaitedParams;
 	const awaitedSearchParams = await searchParams;
 	const dict = await getDictionary(lang as "en" | "ru" | "he");
-
+	await connection();
 	return (
 		<main className="container mx-auto px-4 py-8 relative">
 			<div className="flex items-center justify-end mb-4">
