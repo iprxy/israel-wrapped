@@ -1,0 +1,79 @@
+{
+	"common": {
+		"cities": "Города",
+		"areas": "Области",
+		"wholeIsrael": "Весь Израиль"
+	},
+	"cities": {
+		"search": "Поиск городов...",
+		"notFound": "Города не найдены",
+		"aria": {
+			"combobox": "Выбор городов",
+			"selected": "Выбранный город"
+		}
+	},
+	"alerts": {
+		"empty": "Выберите города или области для просмотра тревог"
+	},
+	"heatmap": {
+		"less": "Меньше",
+		"more": "Больше"
+	},
+	"stats": {
+		"title": "Мой 2024 в Израиле",
+		"subtitle": "Статистика тревог",
+		"wholeIsrael": "Весь Израиль",
+		"inMyCity": "В моем городе",
+		"inMyArea": "В моей области",
+		"selectedItems": {
+			"cities": {
+				"one": "В моем городе",
+				"many": "В моих городах"
+			},
+			"areas": {
+				"one": "В моей области",
+				"many": "В моих областях"
+			}
+		},
+		"metrics": {
+			"totalAlerts": "Всего тревог",
+			"rocketAlerts": "Ракетных тревог",
+			"droneAlerts": "Тревог БПЛА",
+			"firstAlert": "Первая тревога",
+			"lastAlert": "Последняя тревога",
+			"longestStreak": "Самая длинная серия",
+			"days": "дней",
+			"maxAlertsPerDay": "Максимум тревог за день",
+			"alerts": "тревог",
+			"eliminated": "Уничтожены",
+			"leaders": {
+				"yahya": "Яхья Синвар",
+				"hassan": "Хасан Насралла",
+				"ismail": "Исмаил Хания",
+				"mohammed": "Мохаммад Дейф"
+			},
+			"otherLeaders": "и десятки других лидеров ХАМАС и Хезболлы",
+			"hostages": {
+				"description": "заложников и их тел находится в плену хамаса в газе",
+				"action": "Bring Them Home Now"
+			},
+			"shelterTime": {
+				"title": "Время в укрытии",
+				"hours": "ч",
+				"minutes": "м"
+			}
+		},
+		"heatmap": {
+			"less": "Меньше",
+			"more": "Больше",
+			"title": "Тревоги по дням",
+			"alertsCount": "Количество тревог для:"
+		},
+		"share": {
+			"share": "Поделиться",
+			"download": "Скачать",
+			"madeWith": "Сделано с помощью",
+			"loading": "Создание скриншота..."
+		}
+	}
+}

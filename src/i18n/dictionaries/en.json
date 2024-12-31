@@ -1,0 +1,79 @@
+{
+	"common": {
+		"cities": "Cities",
+		"areas": "Areas",
+		"wholeIsrael": "Whole Israel"
+	},
+	"cities": {
+		"search": "Search cities...",
+		"notFound": "No cities found",
+		"aria": {
+			"combobox": "Cities selector",
+			"selected": "Selected city"
+		}
+	},
+	"alerts": {
+		"empty": "Select cities or areas to see alerts"
+	},
+	"heatmap": {
+		"less": "Less",
+		"more": "More"
+	},
+	"stats": {
+		"title": "My 2024 in Israel",
+		"subtitle": "Alerts statistics",
+		"wholeIsrael": "Whole Israel",
+		"inMyCity": "In my city",
+		"inMyArea": "In my area",
+		"selectedItems": {
+			"cities": {
+				"one": "In my city",
+				"many": "In my cities"
+			},
+			"areas": {
+				"one": "In my area",
+				"many": "In my areas"
+			}
+		},
+		"metrics": {
+			"totalAlerts": "Total alerts",
+			"rocketAlerts": "Rocket alerts",
+			"droneAlerts": "UAV alerts",
+			"firstAlert": "First alert",
+			"lastAlert": "Last alert",
+			"longestStreak": "Longest streak",
+			"days": "days",
+			"maxAlertsPerDay": "Max alerts per day",
+			"alerts": "alerts",
+			"eliminated": "Eliminated",
+			"leaders": {
+				"yahya": "Yahya Sinwar",
+				"hassan": "Hassan Nasrallah",
+				"ismail": "Ismail Haniyeh",
+				"mohammed": "Mohammed Deif"
+			},
+			"otherLeaders": "and dozens of other Hamas and Hezbollah leaders",
+			"hostages": {
+				"description": "hostages and their bodies are held captive by Hamas in Gaza",
+				"action": "Bring Them Home Now"
+			},
+			"shelterTime": {
+				"title": "Time in shelter",
+				"hours": "h",
+				"minutes": "m"
+			}
+		},
+		"heatmap": {
+			"less": "Less",
+			"more": "More",
+			"title": "Alerts by day",
+			"alertsCount": "Alerts count for:"
+		},
+		"share": {
+			"share": "Share",
+			"download": "Download",
+			"madeWith": "Made with",
+			"loading": "Creating screenshot..."
+		}
+	}
+}

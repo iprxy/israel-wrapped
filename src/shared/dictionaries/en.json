@@ -1,0 +1,24 @@
+{
+	"metrics": {
+		"totalAlerts": "Total alerts",
+		"rocketAlerts": "rocket alerts",
+		"droneAlerts": "drone alerts",
+		"firstAlert": "First alert",
+		"lastAlert": "Last alert",
+		"longestStreak": "Longest streak",
+		"days": "days",
+		"maxAlertsPerDay": "Max alerts per day",
+		"alerts": "alerts",
+		"eliminated": "Eliminated",
+		"otherLeaders": "and dozens of other Hamas and Hezbollah leaders",
+		"hostages": {
+			"description": "hostages and their bodies are held captive by Hamas in Gaza",
+			"action": "Bring Them Home Now"
+		},
+		"shelterTime": {
+			"title": "Time in shelter",
+			"hours": "h",
+			"minutes": "m"
+		}
+	}
+}

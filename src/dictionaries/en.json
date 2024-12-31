@@ -1,0 +1,22 @@
+{
+	"cities": "Cities",
+	"areas": "Areas",
+	"search": {
+		"cities": "Search cities...",
+		"areas": "Search areas..."
+	},
+	"aria": {
+		"combobox": "Search",
+		"selected": "Selected"
+	},
+	"alerts": {
+		"empty": "Select cities to view alerts",
+		"count": "alerts",
+		"times": "times",
+		"loading": "Loading..."
+	},
+	"heatmap": {
+		"less": "less",
+		"more": "more"
+	}
+}

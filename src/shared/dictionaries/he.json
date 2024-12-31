@@ -1,0 +1,24 @@
+{
+	"metrics": {
+		"totalAlerts": "סה״כ אזעקות",
+		"rocketAlerts": "אזעקות רקטות",
+		"droneAlerts": "אזעקות רחפנים",
+		"firstAlert": "אזעקה ראשונה",
+		"lastAlert": "אזעקה אחרונה",
+		"longestStreak": "רצף ימים הארוך ביותר",
+		"days": "ימים",
+		"maxAlertsPerDay": "מקסימום אזעקות ביום",
+		"alerts": "אזעקות",
+		"eliminated": "חוסלו",
+		"otherLeaders": "ועשרות מנהיגי חמאס וחיזבאללה אחרים",
+		"hostages": {
+			"description": "חטופים וגופותיהם מוחזקים בשבי חמאס בעזה",
+			"action": "Bring Them Home Now"
+		},
+		"shelterTime": {
+			"title": "זמן במקלט",
+			"hours": "ש",
+			"minutes": "ד"
+		}
+	}
+}

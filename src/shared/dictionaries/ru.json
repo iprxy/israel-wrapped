@@ -1,0 +1,24 @@
+{
+	"metrics": {
+		"totalAlerts": "Всего тревог",
+		"rocketAlerts": "ракетных тревог",
+		"droneAlerts": "тревог БПЛА",
+		"firstAlert": "Первая тревога",
+		"lastAlert": "Последняя тревога",
+		"longestStreak": "Максимум дней подряд",
+		"days": "дней",
+		"maxAlertsPerDay": "Максимум тревог за день",
+		"alerts": "тревог",
+		"eliminated": "Уничтожены",
+		"otherLeaders": "и десятки других лидеров ХАМАС и Хезболлы",
+		"hostages": {
+			"description": "заложников и их тел находится в плену хамаса в газе",
+			"action": "Bring Them Home Now"
+		},
+		"shelterTime": {
+			"title": "Время в укрытии",
+			"hours": "ч",
+			"minutes": "м"
+		}
+	}
+}

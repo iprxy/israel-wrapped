@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./azakot.db"
+}
+
+model Alert {
+  id     Int      @id @default(autoincrement())
+  type   String
+  date   DateTime
+  cities City[]
+}
+
+model Area {
+  id     Int    @id
+  he     String
+  en     String
+  ru     String
+  cities City[]
+}
+
+model City {
+  id        Int     @id @default(autoincrement())
+  he        String  @unique
+  ru        String
+  en        String
+  areaId    Int
+  countdown Int
+  area      Area    @relation(fields: [areaId], references: [id])
+  alerts    Alert[]
+}

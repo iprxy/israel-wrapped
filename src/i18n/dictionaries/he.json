@@ -1,0 +1,79 @@
+{
+	"common": {
+		"cities": "ערים",
+		"areas": "אזורים",
+		"wholeIsrael": "כל ישראל"
+	},
+	"cities": {
+		"search": "חיפוש ערים...",
+		"notFound": "לא נמצאו ערים",
+		"aria": {
+			"combobox": "בחירת ערים",
+			"selected": "עיר נבחרת"
+		}
+	},
+	"alerts": {
+		"empty": "בחר ערים או אזורים לצפייה בהתראות"
+	},
+	"heatmap": {
+		"less": "פחות",
+		"more": "יותר"
+	},
+	"stats": {
+		"title": "2024 שלי בישראל",
+		"subtitle": "סטטיסטיקת התראות",
+		"wholeIsrael": "כל ישראל",
+		"inMyCity": "בעיר שלי",
+		"inMyArea": "באזור שלי",
+		"selectedItems": {
+			"cities": {
+				"one": "בעיר שלי",
+				"many": "בערים שלי"
+			},
+			"areas": {
+				"one": "באזור שלי",
+				"many": "באזורים שלי"
+			}
+		},
+		"metrics": {
+			"totalAlerts": "סה״כ התראות",
+			"rocketAlerts": "התראות רקטות",
+			"droneAlerts": "התראות רחפנים",
+			"firstAlert": "התראה ראשונה",
+			"lastAlert": "התראה אחרונה",
+			"longestStreak": "רצף הימים הארוך ביותר",
+			"days": "ימים",
+			"maxAlertsPerDay": "מקסימום התראות ביום",
+			"alerts": "התראות",
+			"eliminated": "חוסלו",
+			"leaders": {
+				"yahya": "יחיא סינוואר",
+				"hassan": "חסן נסראללה",
+				"ismail": "איסמעיל הנייה",
+				"mohammed": "מוחמד דיף"
+			},
+			"otherLeaders": "ועשרות מנהיגי חמאס וחיזבאללה אחרים",
+			"hostages": {
+				"description": "חטופים וגופותיהם מוחזקים בשבי חמאס בעזה",
+				"action": "Bring Them Home Now"
+			},
+			"shelterTime": {
+				"title": "זמן במקלט",
+				"hours": "ש",
+				"minutes": "ד"
+			}
+		},
+		"heatmap": {
+			"less": "פחות",
+			"more": "יותר",
+			"title": "התראות לפי יום",
+			"alertsCount": "כמות התראות עבור:"
+		},
+		"share": {
+			"share": "שתף",
+			"download": "הורד",
+			"madeWith": "נוצר באמצעות",
+			"loading": "יוצר צילום מסך..."
+		}
+	}
+}

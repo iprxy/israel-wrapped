@@ -1,0 +1,38 @@
+-- CreateTable
+CREATE TABLE "Alert" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "type" TEXT NOT NULL,
+    "date" DATETIME NOT NULL
+);
+
+-- CreateTable
+CREATE TABLE "Area" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "he" TEXT NOT NULL COLLATE NOCASE,
+    "en" TEXT NOT NULL COLLATE NOCASE,
+    "ru" TEXT NOT NULL COLLATE NOCASE
+);
+
+-- CreateTable
+CREATE TABLE "City" (
+    "he" TEXT NOT NULL PRIMARY KEY COLLATE NOCASE,
+    "ru" TEXT NOT NULL COLLATE NOCASE,
+    "en" TEXT NOT NULL COLLATE NOCASE,
+    "areaId" INTEGER NOT NULL,
+    "countdown" INTEGER NOT NULL,
+    CONSTRAINT "City_areaId_fkey" FOREIGN KEY ("areaId") REFERENCES "Area" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- CreateTable
+CREATE TABLE "_AlertToCity" (
+    "A" INTEGER NOT NULL,
+    "B" TEXT NOT NULL,
+    CONSTRAINT "_AlertToCity_A_fkey" FOREIGN KEY ("A") REFERENCES "Alert" ("id") ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT "_AlertToCity_B_fkey" FOREIGN KEY ("B") REFERENCES "City" ("he") ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- CreateIndex
+CREATE UNIQUE INDEX "_AlertToCity_AB_unique" ON "_AlertToCity"("A", "B");
+
+-- CreateIndex
+CREATE INDEX "_AlertToCity_B_index" ON "_AlertToCity"("B");
