@@ -3,7 +3,6 @@ import { AlertsStats } from "@/features/alerts-stats/ui/alerts-stats";
 import { CitiesSelectorWrapper } from "@/features/cities-selector/ui/cities-selector-wrapper";
 import { LangSwitcher } from "@/features/lang-switcher/ui/lang-switcher";
 import { getDictionary } from "@/i18n/get-dictionary";
-import { unstable_noStore as noStore } from "next/cache";
 import { connection } from "next/server";
 
 type SearchParams = {
@@ -22,7 +21,7 @@ const getAlertsData = async (
 	isAreaView: boolean,
 	isWholeIsrael = false,
 ) => {
-	noStore();
+	await connection();
 	if (!ids.length && !isWholeIsrael) return [];
 
 	if (isWholeIsrael) {
@@ -87,7 +86,7 @@ const getAlertsData = async (
 };
 
 const getCities = async () => {
-	"use cache";
+	await connection();
 	return await prisma.city.findMany({
 		orderBy: {
 			id: "asc",
@@ -96,7 +95,7 @@ const getCities = async () => {
 };
 
 const getAreas = async () => {
-	"use cache";
+	await connection();
 	return await prisma.area.findMany({
 		orderBy: {
 			id: "asc",
@@ -184,9 +183,10 @@ async function AlertsSection({
 export default async function Home({ searchParams, params }: Props) {
 	const awaitedParams = await params;
 	const { lang } = awaitedParams;
+	await connection();
 	const awaitedSearchParams = await searchParams;
 	const dict = await getDictionary(lang as "en" | "ru" | "he");
-	await connection();
+
 	return (
 		<main className="container mx-auto px-4 py-8 relative">
 			<div className="flex items-center justify-end mb-4">
